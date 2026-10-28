@@ -1,0 +1,169 @@
+
+/* ========================================
+   MY LITTLE CORNER
+   Scrapbook Design System
+======================================== */
+
+:root {
+    --cream: #FFF8ED;
+    --sage: #DCE9CC;
+    --green: #56735B;
+    --peach: #F7C6A3;
+    --pink: #F4C5D7;
+    --aqua: #C5E8E8;
+
+    --text: #493E37;
+    --muted: #766B63;
+    --paper: #FFFEFA;
+    --border: #E8DDCF;
+}
+
+/* Global styles */
+body {
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* Navigation */
+.site-header {
+    background-color: var(--sage);
+    border-bottom: 2px solid var(--border);
+    padding: 20px 0;
+}
+
+.site-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--green);
+    text-decoration: none;
+}
+
+.site-header nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-header nav a:hover {
+    color: var(--green);
+}
+
+/* Welcome section */
+.welcome-section {
+    padding: 50px 0;
+}
+
+.welcome-section h1 {
+    color: var(--green);
+    line-height: 1.2;
+}
+
+.welcome-section .lead {
+    color: var(--muted);
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Custom buttons */
+.btn-scrapbook {
+    background-color: var(--green);
+    color: white;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.btn-scrapbook:hover {
+    background-color: #405A46;
+    color: white;
+}
+
+.btn-outline-scrapbook {
+    border: 2px solid var(--green);
+    color: var(--green);
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.btn-outline-scrapbook:hover {
+    background-color: var(--sage);
+    color: var(--text);
+}
+
+/* Temporary decorative illustration */
+.welcome-decoration {
+    background-color: var(--aqua);
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    min-height: 240px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 3rem;
+}
+
+/* Scrapbook cards */
+.features-section h2 {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.scrapbook-card {
+    background-color: var(--paper);
+    border: 2px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+
+    box-shadow: 4px 5px 0 var(--sage);
+
+    transition: transform 0.2s ease;
+}
+
+.scrapbook-card:hover {
+    transform: translateY(-4px);
+}
+
+.scrapbook-card h3 {
+    color: var(--green);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.scrapbook-card p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--sage);
+    color: var(--green);
+    border-top: 2px solid var(--border);
+}
+
+/* Accessibility */
+a:focus-visible {
+    outline: 3px solid var(--green);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scrapbook-card {
+        transition: none;
+    }
+
+    .scrapbook-card:hover {
+        transform: none;
+    }
+}
