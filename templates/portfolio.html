@@ -1,0 +1,167 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+Portfolio | My Little Corner
+{% endblock %}
+
+{% block content %}
+
+<!-- Portfolio Introduction -->
+<section class="portfolio-intro mb-5">
+
+    <p class="eyebrow">
+        ✦ Software Development Portfolio
+    </p>
+
+    <h1 class="display-5 fw-bold">
+        Hi, I'm Your Name!
+    </h1>
+
+    <p class="lead">
+        I'm a computer science student who enjoys
+        building software, solving problems,
+        and learning new technologies.
+    </p>
+
+    <div class="d-flex flex-wrap gap-2 mt-4">
+        <a href="https://github.com/"
+           class="btn btn-scrapbook"
+           target="_blank"
+           rel="noopener noreferrer">
+            My GitHub
+        </a>
+    </div>
+
+</section>
+
+<!-- Projects -->
+<section class="mb-5">
+
+    <h2 class="mb-4">
+        ✿ Featured Projects
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- Project One -->
+        <div class="col-12 col-md-6">
+
+            <article class="retro-window h-100">
+
+                <!-- Retro Window Title Bar -->
+                <div class="retro-titlebar">
+
+                    <div class="window-dots" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="window-title">
+                        personal-website.exe
+                    </span>
+
+                    <span aria-hidden="true">✕</span>
+
+                </div>
+
+                <!-- Project Image Placeholder -->
+                <div class="project-image">
+                    <span aria-hidden="true">🌷 🐠 💻 ✨</span>
+                </div>
+
+                <!-- Project Information -->
+                <div class="project-content">
+
+                    <h3>My Little Corner</h3>
+
+                    <p>
+                        A personal website built with
+                        Python, Flask, Bootstrap, and
+                        custom CSS. Designed to be hosted
+                        on a Raspberry Pi 5.
+                    </p>
+
+                    <!-- Technology Tags -->
+                    <div class="d-flex flex-wrap gap-2">
+
+                        <span class="tech-tag tag-green">
+                            Python
+                        </span>
+
+                        <span class="tech-tag tag-blue">
+                            Flask
+                        </span>
+
+                        <span class="tech-tag tag-pink">
+                            Bootstrap
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+                <!-- Future Project -->
+                <div class="col-12 col-md-6">
+
+                    <article class="scrapbook-card h-100">
+
+                        <h3>💻 More Projects Coming Soon</h3>
+
+                        <p>
+                            This space is reserved for
+                            future software projects.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section class="mb-5">
+
+            <h2 class="mb-4">
+                ✦ Technical Skills
+            </h2>
+
+            <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge text-bg-success p-2">Python</span>
+                <span class="badge text-bg-success p-2">HTML</span>
+                <span class="badge text-bg-success p-2">CSS</span>
+                <span class="badge text-bg-success p-2">JavaScript</span>
+                <span class="badge text-bg-success p-2">Flask</span>
+                <span class="badge text-bg-success p-2">Git</span>
+
+            </div>
+
+        </section>
+
+<!-- Education -->
+<section class="mb-5">
+
+    <h2 class="mb-3">
+        ✿ Education
+    </h2>
+
+    <p>
+        Computer Science Student
+    </p>
+
+    <p>
+        University information coming soon.
+    </p>
+
+</section>
+
+{% endblock %}

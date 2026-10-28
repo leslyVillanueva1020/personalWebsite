@@ -167,3 +167,211 @@ a:focus-visible {
         transform: none;
     }
 }
+
+
+/* ========================================
+   PORTFOLIO PAGE
+======================================== */
+
+.portfolio-intro {
+    background-color: var(--paper);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: clamp(24px, 5vw, 48px);
+
+    box-shadow: 5px 6px 0 var(--sage);
+}
+
+.portfolio-intro h1 {
+    color: var(--green);
+}
+
+.portfolio-intro .lead {
+    color: var(--muted);
+    max-width: 700px;
+}
+
+
+/* ========================================
+   RETRO PROJECT WINDOWS
+======================================== */
+
+.retro-window {
+    background-color: var(--paper);
+    border: 2px solid #E5B8A9;
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow: 4px 5px 0 var(--sage);
+
+    transition: transform 0.2s ease;
+}
+
+.retro-window:hover {
+    transform: translateY(-4px);
+}
+
+/* Window title bar */
+.retro-titlebar {
+    background-color: var(--pink);
+    padding: 10px 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    border-bottom: 2px solid #E5B8A9;
+}
+
+/* Decorative window dots */
+.window-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.window-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #E8878B;
+}
+
+.window-dots span:nth-child(2) {
+    background-color: #E8C36C;
+}
+
+.window-dots span:nth-child(3) {
+    background-color: #8FC28C;
+}
+
+.window-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #744F5B;
+}
+
+/* Project image placeholder */
+.project-image {
+    background-color: var(--aqua);
+    min-height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    padding: 20px;
+}
+
+/* Project description */
+.project-content {
+    padding: 24px;
+}
+
+.project-content h3 {
+    color: var(--green);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.project-content p {
+    color: var(--muted);
+}
+
+/* Pastel technology tags */
+.tech-tag {
+    padding: 5px 12px;
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.tag-green {
+    background-color: var(--sage);
+}
+
+.tag-blue {
+    background-color: var(--aqua);
+}
+
+.tag-pink {
+    background-color: var(--pink);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .retro-window {
+        transition: none;
+    }
+
+    .retro-window:hover {
+        transform: none;
+    }
+}
+
+
+/* ========================================
+   JOURNAL PAGE
+======================================== */
+
+.journal-tag {
+    background-color: var(--paper);
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 30px;
+
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.journal-date {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.scrapbook-card h2 {
+    color: var(--green);
+    font-weight: bold;
+}
+
+
+/* ========================================
+   JOURNAL THUMBNAILS
+======================================== */
+
+.journal-thumbnail {
+    width: 85px;
+    height: 85px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 14px;
+    border: 1px solid var(--border);
+
+    font-size: 2rem;
+}
+
+.thumbnail-pink {
+    background-color: var(--pink);
+}
+
+.thumbnail-blue {
+    background-color: var(--aqua);
+}
+
+@media (max-width: 480px) {
+    .journal-thumbnail {
+        width: 65px;
+        height: 65px;
+        font-size: 1.5rem;
+    }
+}

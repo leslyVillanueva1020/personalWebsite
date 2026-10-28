@@ -1,0 +1,150 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+Journal | My Little Corner
+{% endblock %}
+
+{% block content %}
+
+<!-- Journal Introduction -->
+<section class="mb-5">
+
+    <p class="eyebrow">
+        ✦ Little Thoughts & Updates
+    </p>
+
+    <h1 class="display-5 fw-bold">
+        My Journal ♡
+    </h1>
+
+    <p class="lead">
+        A collection of everyday moments,
+        programming adventures, and little
+        things I want to remember.
+    </p>
+
+</section>
+
+<!-- Journal Categories -->
+<section class="mb-4">
+
+    <div class="d-flex flex-wrap gap-2">
+
+        <span class="journal-tag">All</span>
+        <span class="journal-tag">Everyday Life</span>
+        <span class="journal-tag">Programming</span>
+        <span class="journal-tag">University</span>
+        <span class="journal-tag">Personal</span>
+
+    </div>
+
+</section>
+
+<!-- Journal Entries -->
+<section class="row g-4">
+
+    <!-- First Post -->
+    <div class="col-12">
+
+        
+    <article class="scrapbook-card">
+
+        <div class="d-flex align-items-start gap-3">
+
+            <!-- Journal Thumbnail -->
+            <div class="journal-thumbnail thumbnail-pink"
+                aria-hidden="true">
+                🌷
+            </div>
+
+            <!-- Journal Information -->
+            <div class="flex-grow-1">
+
+                <p class="journal-date">
+                    Example Journal Entry
+                </p>
+
+                <h2 class="h4">
+                    A little update on life lately
+                </h2>
+
+                <p>
+                    Just a few thoughts about what
+                    I've been up to recently.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="tech-tag tag-pink">
+                        Everyday Life
+                    </span>
+
+                    <span class="tech-tag tag-green">
+                        Personal
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    </div>
+
+    
+    <!-- Second Post -->
+    <div class="col-12">
+
+        <article class="scrapbook-card">
+
+            <div class="d-flex align-items-start gap-3">
+
+                <!-- Journal Thumbnail -->
+                <div class="journal-thumbnail thumbnail-blue"
+                    aria-hidden="true">
+                    💻
+                </div>
+
+                <!-- Journal Information -->
+                <div class="flex-grow-1">
+
+                    <p class="journal-date">
+                        Example Programming Entry
+                    </p>
+
+                    <h2 class="h4">
+                        Learning Flask and building my website
+                    </h2>
+
+                    <p>
+                        What I've learned while working
+                        on my first personal website.
+                    </p>
+
+                    <!-- Journal Tags -->
+                    <div class="d-flex flex-wrap gap-2">
+
+                        <span class="tech-tag tag-blue">
+                            Programming
+                        </span>
+
+                        <span class="tech-tag tag-green">
+                            Projects
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+</section>
+
+{% endblock %}
